@@ -38,7 +38,7 @@ jobs:
         run: hugo --minify
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3  # 修改这里，从 v2 改为 v3
         with:
           path: ./public
 
