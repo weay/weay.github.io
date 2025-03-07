@@ -1,0 +1,69 @@
+baseURL = 'https://weay.github.io/'
+languageCode = 'zh-cn'
+title = '我的AI日志'
+theme = 'stack'
+
+[params]
+mainSections = ['post']
+featuredImageField = 'image'
+rssFullContent = true
+
+[params.sidebar]
+emoji = '🚀'
+subtitle = '探索AI的无限可能'
+
+[params.sidebar.avatar]
+enabled = true
+local = false
+src = "/img/avatar.jpg"
+
+[params.search]
+enabled = true
+type = "fuse"
+
+[params.share]
+twitter = false
+facebook = false
+reddit = false
+linkedin = false
+pinterest = false
+email = false
+wechat = true
+
+[menu]
+[[menu.main]]
+identifier = 'home'
+name = '首页'
+url = '/'
+weight = -100
+
+[[menu.main]]
+identifier = 'posts'
+name = '文章'
+url = '/post'
+weight = -90
+
+[[menu.main]]
+identifier = 'categories'
+name = '分类'
+url = '/categories'
+weight = -85
+
+[[menu.main]]
+identifier = 'tags'
+name = '标签'
+url = '/tags'
+weight = -80
+
+[[menu.main]]
+identifier = "search"
+name = "搜索"
+url = "/search"
+weight = -70
+
+[taxonomies]
+tag = 'tags'
+category = 'categories'
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]

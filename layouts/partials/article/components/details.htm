@@ -1,0 +1,34 @@
+<div class="article-details">
+    <header class="article-category">
+        {{ range (.GetTerms "categories") }}
+            <a href="{{ .RelPermalink }}" class="article-category-link">
+                {{ .LinkTitle }}
+            </a>
+        {{ end }}
+    </header>
+    
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="{{ .RelPermalink }}">
+                {{- .Title -}}
+            </a>
+        </h2>
+        
+        {{ with .Params.description }}
+            <h3 class="article-subtitle">
+                {{ . }}
+            </h3>
+        {{ end }}
+    </div>
+
+    <footer class="article-time">
+        {{ partial "helper/icon" "clock" }}
+        <time class="article-time--published">
+            {{- .Date.Format "Jan 02, 2006" -}}
+        </time>
+        <span class="article-time--reading">
+            {{ .ReadingTime }} minute read
+        </span>
+        <a href="#" onclick="shareToWechat()" class="share-link">分享</a>
+    </footer>
+</div>

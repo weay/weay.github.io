@@ -1,0 +1,29 @@
+{{ define "main" }}
+<article class="article single">
+    <div class="article-banner-container">
+        <div class="article-banner">
+            <img src="/img/banner.jpg" alt="banner">
+        </div>
+        <div class="article-header-overlay">
+            <div class="article-details">
+                <div class="article-title">
+                    <h1>{{ .Title }}</h1>
+                </div>
+                <div class="article-meta">
+                    <div class="article-date">
+                        {{ .Date.Format "Jan 02, 2024" }}
+                        <span class="dot">·</span>
+                        {{ .ReadingTime }} min read
+                        <span class="dot">·</span>
+                        <a href="#" onclick="shareToWechat()" class="share-link">分享</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="article-content">
+        {{ .Content }}
+    </section>
+</article>
+{{ end }}

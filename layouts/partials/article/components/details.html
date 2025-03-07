@@ -1,0 +1,31 @@
+<div class="article-details">
+    {{ with .Params.categories }}
+    <header class="article-category">
+        {{ range . }}
+        <a href="{{ "categories/" | relLangURL }}{{ . | urlize }}" class="article-category-link">
+            {{ . }}
+        </a>
+        {{ end }}
+    </header>
+    {{ end }}
+
+    <h2 class="article-title">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h2>
+
+    {{ with .Params.description }}
+    <h3 class="article-subtitle">{{ . }}</h3>
+    {{ end }}
+
+    <footer class="article-time">
+        <div class="article-toolbar">
+            <div class="post-meta">
+                <time>{{ .Date.Format "Jan 02, 2006" }}</time>
+                <span class="dot"></span>
+                <span>{{ .ReadingTime }} min read</span>
+                <span class="dot"></span>
+                <a href="#" onclick="shareToWechat()" class="share-link">分享</a>
+            </div>
+        </div>
+    </footer>
+</div>

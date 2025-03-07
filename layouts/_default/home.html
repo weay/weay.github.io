@@ -1,0 +1,11 @@
+{{ define "main" }}
+    {{- partial "widgets/banner" . -}}
+    
+    <div class="container">
+        {{ range .Paginator.Pages }}
+            {{ .Render "summary" }}
+        {{ end }}
+    </div>
+    
+    {{ partial "pagination.html" . }}
+{{ end }}

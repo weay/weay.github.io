@@ -1,0 +1,38 @@
+// 精确定位文章详情页的 banner 容器和图片
+.article.single {
+    .article-banner-container {
+        width: 800px;
+        margin: 0 auto;
+        position: relative;
+        
+        .article-banner {
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            
+            img {
+                width: 100%;
+                height: 150px !important;
+                object-fit: cover;
+                display: block;
+            }
+        }
+        
+        .article-header-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem;
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+            color: white;
+        }
+    }
+}
+
+// 响应式处理
+@media (max-width: 800px) {
+    .article.single .article-banner-container {
+        width: 100%;
+    }
+}
