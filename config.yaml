@@ -1,6 +1,3 @@
-
-2. 添加以下基本配置：
-```yaml
 baseURL: 'https://weay.github.io/'
 languageCode: 'zh-cn'
 title: '我的AI日志'
@@ -30,7 +27,6 @@ menu:
       url: /search
       weight: 50
 
-# 主题参数
 params:
   description: '探索AI的无限可能'
   mainSections:
@@ -54,4 +50,3 @@ params:
       enabled: true
       local: true
       src: "img/avatar.jpg"
-```
