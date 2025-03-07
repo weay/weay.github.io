@@ -2,34 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>https://weay.github.io/</loc>
     <lastmod>2025-03-07T11:00:51+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-03-07T11:00:51+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://weay.github.io/categories/</loc>
     <lastmod>2024-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
+    <loc>https://weay.github.io/tags/hugo/</loc>
     <lastmod>2024-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://weay.github.io/post/</loc>
     <lastmod>2024-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/stack/</loc>
+    <loc>https://weay.github.io/tags/stack/</loc>
     <lastmod>2024-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://weay.github.io/tags/</loc>
     <lastmod>2024-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://weay.github.io/categories/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2024-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/first-post/</loc>
+    <loc>https://weay.github.io/post/first-post/</loc>
     <lastmod>2024-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/test/</loc>
+    <loc>https://weay.github.io/post/test/</loc>
     <lastmod>2024-03-07T00:00:00+00:00</lastmod>
   </url>
 </urlset>
